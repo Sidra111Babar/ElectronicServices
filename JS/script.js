@@ -62,7 +62,7 @@ function submitService(serviceType) {         /* The function submitService(serv
       const subServiceText = subService.value;
 
       // Create the WhatsApp message
-      const whatsappLink = `https://wa.me/03124387803?text=I would like to book a ${serviceType} service for ${encodeURIComponent(subServiceText)}.`;   /* The encodeURIComponent() function is used to ensure that the sub-service text is safely included in the URL (special characters are properly encoded). */
+      const whatsappLink = `https://wa.me/noHere?text=I would like to book a ${serviceType} service for ${encodeURIComponent(subServiceText)}.`;   /* The encodeURIComponent() function is used to ensure that the sub-service text is safely included in the URL (special characters are properly encoded). */
       
       // Open WhatsApp link in a new tab
       window.open(whatsappLink, '_blank');
