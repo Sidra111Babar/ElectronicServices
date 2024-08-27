@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    
+  }
+  .NavbarMobile{
+       background-color: rgb(230, 74, 17);
+       position:fixed;
+       bottom:0; 
+       width:100%;
+       z-index: 100;
+  }
+@media screen and (max-width: 991px) {
+.customNav ul{
+    display: none !important;
+}
+.customNav{
+   background-color: #F8F9FA !important;
+}
+}
+@media screen and (min-width: 991px) {
+  .NavbarMobile{
+      display: none !important;
+  }
+  }
+  @media screen and (max-width: 450px) {
+     .NavbarMobile ul li a{
+         font-size: 10px;
+     }
+  }
+.customNav-link:hover{
+   color:rgb(17, 89, 206) !important;
+}

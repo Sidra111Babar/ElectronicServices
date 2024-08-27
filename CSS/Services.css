@@ -1,0 +1,93 @@
+.customCardsBody{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+}
+@media screen and (max-width: 679px){
+    .customCardsBody{
+        flex-direction: column;
+    }
+    .customCard{
+        height: auto !important;
+        width: auto !important;
+    }
+    .customCardIcon{
+        width: 100%;
+        text-align: center;
+    }
+}
+.firstContainer{
+    background: rgb(10, 75, 179);
+}
+.servicesCardsContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 3rem
+}
+@media screen and (max-width: 1100px){
+    .servicesCardsContainer{
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width: 1100px){
+   .servicesCard {
+     width: 30rem;
+   }
+
+}
+.continueBox {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    background-color: #0a57d5;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: scaleAnimation 1s infinite;
+    z-index: 3;
+  }
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Adjust the scaling factor as needed */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .continueBox .totalPrice {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .continueButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .continueButton span {
+    margin-left: 5px;
+  }
+  
+  .continueBox:hover {
+    transform: scale(1.1);
+  }
+  
+  .continueBox:active {
+    transform: scale(0.9);
+  }
+ 

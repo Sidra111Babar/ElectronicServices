@@ -1,0 +1,21 @@
+.contactButtonsContainer,.contactButtonsContainer2{
+    width: 110px !important;
+    position: fixed; 
+    right: 1%;
+    transition: all 0.3s ease;
+    z-index:99;
+}
+.contactButtonsContainer{
+  top:40%;
+}
+.contactButtonsContainer2{
+    top:58%;    
+}
+.contact1Container{
+    background-color: rgb(17, 89, 206);
+}
+@media screen and (max-width: 575px){
+    .contactButtonsContainer,.contactButtonsContainer2{
+        width: 100px !important;
+    }
+ }

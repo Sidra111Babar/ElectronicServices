@@ -1,0 +1,14 @@
+.footer{
+    background: rgb(10, 75, 179);
+}
+.appStore{
+    margin-top: -10px;
+}
+body{
+    overflow-x: hidden;
+}
+@media screen and (max-width: 991px) {
+    .footer2{
+        padding-bottom: 3rem;
+    }
+}

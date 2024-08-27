@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/Services.css">
+    <script src="JS/script.js"></script>
+    <title>Navbar</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <script>loadContent('navbar.html', 'navbar');</script>
+      <div class="container-fluid firstContainer px-3 py-5">
+            <h1 class="text-light" style="font-size: 60px;">Refrigerator</h1>
+            <p class="text-light fs-4">Refrigerator Service, Repair, and Install All Refrigerator Brands!</p>
+            <div class="container-fluid d-flex gap-3">
+                <div class="card customCard" style="width: 16rem; height:100px; color:rgb(17, 89, 206)">
+                    <div class="card-body customCardsBody">
+                        <i class="bx bxs-star customCardIcon fs-1 p-2 mb-2 bg-light"></i>
+                         <div class="cardContent ms-2">
+                             <p class="fs-4 fw-bold m-0 p-0">4.4/5</p>
+                             <p style="margin-top: -10px;" class="text-secondary fs-5">Average Rating</p>
+                         </div>
+                    </div>
+                  </div>
+                  <div class="card customCard" style="width: 16rem; height:100px; color:rgb(17, 89, 206)">
+                    <div class="card-body customCardsBody">
+                        <i class="bx bxs-purchase-tag-alt fs-1 p-2 mb-2 bg-light"></i>
+                         <div class="cardContent ms-2">
+                             <p class="fs-4 fw-bold m-0 p-0">800</p>
+                             <p style="margin-top: -10px;" class="text-secondary fs-5">Start From</p>
+                         </div>
+                    </div>
+                  </div>
+                  <div class="card customCard" style="width: 16rem; height:100px; color:rgb(17, 89, 206)">
+                    <div class="card-body customCardsBody">
+                        <i class="bx bxs-check-circle fs-1 p-2 mb-2 bg-light"></i>
+                         <div class="cardContent ms-2">
+                             <p class="fs-4 fw-bold m-0 p-0">55754</p>
+                             <p style="margin-top: -10px;" class="text-secondary fs-5">Done Order</p>
+                         </div>
+                    </div>
+                  </div>
+            </div>
+      </div>
+      <div id="fixedButtons"></div>
+     <script>loadContent('FixedButtons.html', 'fixedButtons');</script>
+      <div class="container px-3 py-5 bg-light">
+        <h1>Services</h1>
+        <div class="container servicesCardsContainer" style="position: relative;">
+            <div class="card servicesCard shadow-sm" style="border-radius: 10px;">
+                <div class="card-body d-flex align-items-start">
+                    <div class="imgWrapper">
+                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="Refrigerator Service" style="width: 120px; height: 130px;">
+                    </div>
+                    <div class="servicesCardContent ms-3">
+                        <p class="m-0 fw-bold">General Service</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-decoration-line-through text-muted">Rs. 3500</p>
+                            <p class="fw-bold price" data-initial-price="2150">Rs. 2150</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="d-flex align-items-center text-warning bg-light rounded-pill px-2">
+                                <i class="bx bxs-star"></i>
+                                <span class="ms-1">4.3</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="position: absolute; right: 10px;">
+                                <button class="btn border btn-sm d-flex align-items-center rounded-pill addButton">
+                                    <span class="fw-bold me-2">Add</span>
+                                    <span class="fw-bold text-light bg-black rounded-circle px-2">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Continue box -->
+                        <div class="continueBox mt-2 d-none">
+                            <div class="d-flex align-items-center justify-content-between box-content">
+                              <span class="totalPrice">Rs 2150</span>
+                              <button class="btn continueButton text-light">Continue </button><span>&#8594;</span>
+                            </div>
+                        </div>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="card servicesCard shadow-sm" style="border-radius: 10px;">
+                <div class="card-body d-flex align-items-start">
+                    <div class="imgWrapper">
+                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="Refrigerator Service" style="width: 120px; height: 130px;">
+                    </div>
+                    <div class="servicesCardContent ms-3">
+                        <p class="m-0 fw-bold">Repair Service</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-decoration-line-through text-muted">Rs. 3500</p>
+                            <p class="fw-bold price" data-initial-price="2800">Rs. 2800</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="d-flex align-items-center text-warning bg-light rounded-pill px-2">
+                                <i class="bx bxs-star"></i>
+                                <span class="ms-1">4.3</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="position: absolute; right: 10px;">
+                                <button class="btn border btn-sm d-flex align-items-center rounded-pill addButton">
+                                    <span class="fw-bold me-2">Add</span>
+                                    <span class="fw-bold text-light bg-black rounded-circle px-2">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Continue box -->
+                        <div class="continueBox mt-2 d-none">
+                            <div class="d-flex align-items-center justify-content-between box-content">
+                                <p><span class="totalPrice">Rs. 2800</span></p>
+                                <button class="btn continueButton text-light">Continue </button><span>&#8594;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card servicesCard shadow-sm" style="border-radius: 10px;">
+                <div class="card-body d-flex align-items-start">
+                    <div class="imgWrapper">
+                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="Refrigerator Service" style="width: 120px; height: 130px;">
+                    </div>
+                    <div class="servicesCardContent ms-3">
+                        <p class="m-0 fw-bold">Maintenace Service</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-decoration-line-through text-muted">Rs. 3500</p>
+                            <p class="fw-bold price" data-initial-price="800">Rs. 800</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="d-flex align-items-center text-warning bg-light rounded-pill px-2">
+                                <i class="bx bxs-star"></i>
+                                <span class="ms-1">4.3</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="position: absolute; right: 10px;">
+                                <button class="btn border btn-sm d-flex align-items-center rounded-pill addButton">
+                                    <span class="fw-bold me-2">Add</span>
+                                    <span class="fw-bold text-light bg-black rounded-circle px-2">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Continue box -->
+                        <div class="continueBox mt-2 d-none">
+                            <div class="d-flex align-items-center justify-content-between box-content">
+                                <p><span class="totalPrice">Rs. 800</span></p>
+                                <button class="btn continueButton text-light">Continue </button><span>&#8594;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      <div class="container">
+           <h2>Best Refrigerator Services in Pakistan</h2>
+           <div class="text-secondary">
+            <p>Refrigerators are an essential part of our daily lives, whether at home or in the workplace. To keep them functioning efficiently, they require regular maintenance throughout the year.</p>
+            <p>It's especially important to service your refrigerator before it starts facing heavy usage, such as during the summer months, to ensure it runs smoothly. Without regular maintenance, your refrigerator won’t cool as effectively and may consume more energy, increasing your electricity bills.</p>
+            <p>This is why it’s crucial to choose the right refrigerator maintenance service.</p>
+            <p>To keep your refrigerator running efficiently, regular upkeep is necessary to maintain optimal performance and avoid the need for a costly replacement. If you plan to repair the refrigerator yourself, always remember to unplug it before starting any work.</p>
+            <p>However, attempting repairs on your own can sometimes lead to bigger issues. A small mistake could worsen the problem. In many cases, it's better to rely on experienced refrigerator technicians for repairs.</p>
+            <p>Finding the right technicians can be challenging, but Fori Hal Company is here to assist by providing high-quality refrigerator services in Lahore and Karachi.</p>
+            <p>Fori Hal Company is a trusted provider of refrigerator services in Lahore and Karachi, offering repair, installation, maintenance, gas refilling, and advanced diagnostics for all types of refrigerators, including single-door, double-door, and commercial units.</p>
+        </div>        
+            <h2>We value your trust. We offer:</h2>
+            <ul class="text-secondary">
+                <li>Outstanding Customer Support</li>
+                <li>24/7 Repair Services – No Additional Fees</li>
+                <li>Quick & Dependable Service</li>
+                <li>Certified Expert Technicians</li>
+                <li>Transparent Pricing – No Hidden Fees</li>
+                <li>Wide Selection of Major Refrigerator Brands</li>
+                <li>Guaranteed Financing Options</li>
+                <li>Risk-Free, Satisfaction Guarantee Is this conversation helpful so far?</li>
+            </ul>
+            <h2>Why We are different</h2>
+            <ul class="text-secondary">
+                 <li>Best Price Guarantee</li>
+                 <li>Quick, Expert & Custom Solution</li>
+                 <li>Fast & Reliable Service</li>
+                 <li>All Makes & Models</li>
+                 <li>Respect & Honesty</li>
+            </ul>
+            <h2>Our Services</h2>
+              <p class="text-secondary">Our Refrigerator technicians have many years of hands-on experience. They have the knowledge and skills to identify and fix any Refrigerator issues and can offer solutions for any problems you might face.              </p>
+            <h2>Refrigerator Techanicians</h2>
+            <p class="text-secondary">Our Refrigerator technicians have many years of hands-on experience. They have the knowledge and skills to identify and fix any Refrigerator issues and can offer solutions for any problems you might face.</p>
+            <h2>Refrigerator Repair Services</h2>
+            <p class="text-secondary">Fori Hal Company provides a range of Refrigerator services, including Refrigerator installation, maintenance, gas refilling, and more.</p>
+            <h2>Refrigerator Installation</h2>
+            <p class="text-secondary">We have a skilled team of Refrigerator technicians ready to handle your Refrigerator installation in Lahore and Karachi. Our technicians are highly experienced and can work with all types and models of Refrigerator units.            </p>
+            <h2>Refrigerator Maintenance</h2>
+            <p class="text-secondary">has extensive experience and vast knowledge of Refrigerator maintenance services. Our skilled technicians can work on all the prevailing Refrigerator Brands in the market.</p>
+            <h2>Refrigerator Gas Refilling</h2>
+            <p class="text-secondary">Since our inception, we have grown significantly and now handle essential tasks like gas refilling with expertise. From servicing and repairs to maintenance and support, we cover it all. Contact us today!</p>
+        </div>
+        <div id="footer"></div>
+        <script>loadContent('footer.html', 'footer');</script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>
