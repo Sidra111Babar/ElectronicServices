@@ -6,51 +6,60 @@ function loadContent(file, elementId) {
         })
         .catch(error => console.error('Error loading file:', error));
 }
-/* Add button functionality */
+/* ******************************************Add button functionality *****************************************/
 document.addEventListener('DOMContentLoaded', function() {
     const cardsContainer = document.querySelector('.servicesCardsContainer');
 
+    // Click event for the entire container
     cardsContainer.addEventListener('click', function(event) {
+        const card = event.target.closest('.servicesCardContent');
+        if (!card) return;  // Exit if no card is clicked
+        
+        const priceElement = card.querySelector('.price');
+        const totalPriceElement = card.querySelector('.totalPrice');
+        const continueBox = card.querySelector('.continueBox');
+        const productName = card.querySelector('p.fw-bold').textContent;
+        const initialPrice = parseInt(priceElement.getAttribute('data-initial-price'));
+        let currentQuantity = parseInt(card.getAttribute('data-quantity')) || 1;
+
+        // Add button click handler
         if (event.target.closest('.addButton')) {
-            const card = event.target.closest('.servicesCardContent');
-            const priceElement = card.querySelector('.price');
-            const totalPriceElement = card.querySelector('.totalPrice');
-            const continueBox = card.querySelector('.continueBox');
-
-            const initialPrice = parseInt(priceElement.getAttribute('data-initial-price'));
-            let currentQuantity = parseInt(card.getAttribute('data-quantity')) || 0;
-
-            // Only increment after the first addition
-            if (currentQuantity === 0) {
-                currentQuantity = 1;
-            } else {
-                currentQuantity++;
-            }
-
-            card.setAttribute('data-quantity', currentQuantity);
-            
-            // Calculate new price based on quantity
-            const newPrice = initialPrice * currentQuantity;
-            
-            // Update the total price
-            totalPriceElement.textContent = `Rs. ${newPrice}`;
-            
-            // Show the continue box if it's hidden
             continueBox.classList.remove('d-none');
         }
-    });
 
-    // Continue button functionality
-    cardsContainer.addEventListener('click', function(event) {
+        // + Button click handler
+        if (event.target.closest('.addButton .rounded-circle:last-child')) {
+            currentQuantity++;
+            card.setAttribute('data-quantity', currentQuantity);
+            const newPrice = initialPrice * currentQuantity;
+            totalPriceElement.textContent = `Rs. ${newPrice}`;
+        }
+
+        // - Button click handler
+        if (event.target.closest('.addButton .rounded-circle:first-child')) {
+            if (currentQuantity > 1) {
+                currentQuantity--;
+                card.setAttribute('data-quantity', currentQuantity);
+                const newPrice = initialPrice * currentQuantity;
+                totalPriceElement.textContent = `Rs. ${newPrice}`;
+            }
+        }
+
+        // Continue button functionality
         if (event.target.closest('.continueButton')) {
-            const card = event.target.closest('.servicesCardContent');
-            const currentQuantity = parseInt(card.getAttribute('data-quantity')) || 1;
-            const initialPrice = parseInt(card.querySelector('.price').getAttribute('data-initial-price'));
+            const newPrice = initialPrice * currentQuantity;
+            const message = `I would like to order ${currentQuantity} ${productName}(s) for a total of Rs. ${newPrice}.`;
 
-            alert(`You have selected ${currentQuantity} product(s) with a total amount of Rs. ${initialPrice * currentQuantity}`);
+            // WhatsApp API link
+            const whatsappLink = `https://wa.me/+923104453625?text=${encodeURIComponent(message)}`;
+            window.open(whatsappLink, '_blank');
         }
     });
 });
+function disappearBox(event) {
+    // Get the closest .continueBox of the clicked button and add the d-none class to it
+    event.target.closest('.continueBox').classList.add('d-none');
+}
 
 /* ------------------------------------------Book Now Functionlity------------------------------ */
 function submitService(serviceType) {         /* The function submitService(serviceType) is called when the user clicks the "Submit" button for a service modal (e.g., AC, Refrigerator, etc.). */
@@ -62,7 +71,7 @@ function submitService(serviceType) {         /* The function submitService(serv
       const subServiceText = subService.value;
 
       // Create the WhatsApp message
-      const whatsappLink = `https://wa.me/noHere?text=I would like to book a ${serviceType} service for ${encodeURIComponent(subServiceText)}.`;   /* The encodeURIComponent() function is used to ensure that the sub-service text is safely included in the URL (special characters are properly encoded). */
+      const whatsappLink = `https://wa.me/+923104453625?text=I would like to book a ${serviceType} service for ${encodeURIComponent(subServiceText)}.`;   /* The encodeURIComponent() function is used to ensure that the sub-service text is safely included in the URL (special characters are properly encoded). */
       
       // Open WhatsApp link in a new tab
       window.open(whatsappLink, '_blank');
