@@ -9,12 +9,16 @@
     <title>Navbar</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-white fs-5 customNav">
+    <nav class="navbar navbar-expand-lg bg-body-white fs-5 customNav" style="position: sticky; top: 0;">
         <div class="container-fluid">
          <img src="Assets/logImg-Photoroom.png" alt="" style="width: 100px;height: 100px;">          
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link customNav-link active text-secondary" aria-current="page" href="index.html">Home</a>
+              </li>
+              <!-- **************************************************************************** -->
+              <li class="nav-item">
+                <a class="nav-link customNav-link active text-secondary" aria-current="page" href="About.html">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link customNav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -27,43 +31,62 @@
                   <li><a class="dropdown-item text-secondary" href="AutomaticMachine_Services.html">Automatic Machine</a></li>
                 </ul>
               </li>
-              
-              
+              <!-- ***************************************************** -->
+              <li class="nav-item">
+                <a class="nav-link customNav-link active text-secondary" aria-current="page" href="https://wa.me/03104453625">Contact</a>
+              </li>
             </ul>
-                <li class="nav-item dropdown" style="list-style: none;">
-                    <a class="nav-link customNav-link dropdown-toggle  bg-light px-3 py-2 rounded-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(10, 75, 179)">
-                      Lahore
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item text-secondary" href="#">Lahore</a></li>
-                      <li><a class="dropdown-item text-secondary disabled" href="#">Islamabad</a></li>
-                      <li><a class="dropdown-item text-secondary disabled" href="#">Karachi</a></li>
-                      <li><a class="dropdown-item text-secondary disabled" href="#">Rawalpindi</a></li>
-                    </ul>
+                  <li class="nav-link customNav-link  bg-light px-3 py-2 rounded-4 d-flex align-items-center justify-content-center" style="color:rgb(10, 75, 179)">
+                      <i class="bx bxs-pin fs-4 mt-1 gap-3"></i>
+                      <span>Lahore</span>
                   </li>
         </div>
       </nav>
-    <nav class="NavbarMobile pt-3">
-        <ul class="d-flex gap-2 align-items-center justify-content-between  pe-4"  style="list-style: none;" >
-              <li class="nav-item d-flex align-items-center flex-column">
-                <i class="bx bx-home text-primary fw-bold"></i>
-                <a class="nav-link customNav-link active text-white" aria-current="page" href="index.html">Home</a>
+      <!-- ******************************************************************** -->
+    <nav class="NavbarMobile text-white">
+        <ul class="d-flex gap-2 align-items-center justify-content-between  container"  style="list-style: none;margin-top: 18px;" >
+              <li class="d-flex align-items-center flex-column">
+                <a href="index.html"><i class="bx bx-home text-white fs-3"></i></a>
+                <p>Home</p>
               </li>
-              <li class="nav-item  d-flex align-items-center flex-column">
-                <i class="bx bx-sun text-primary fw-bold"></i>
-                <a class="nav-link customNav-link active text-white" aria-current="page" href="AC_services.html">AC</a>
+              <li class="d-flex align-items-center flex-column">
+                <a href="About.html"><i class="bx bx-user text-white fs-3"></i></a>
+                <p>About</p>
               </li>
-              <li class="nav-item  d-flex align-items-center flex-column">
-                <i class="bx bxs-zap text-primary "></i>
-                <a class="nav-link customNav-link active text-white" aria-current="page" href="GyserServices.html">Geyser</a>
+              <li class="d-flex align-items-center flex-column">
+                <i class=" bx bx-cog text-white fs-3 navOffcanvas"  data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">    
+                </i>
+                <p>Services</p>
+                
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div>
+                      <div class="" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 ps-5 g-2 custom_navbarul d-flex flex-column">
+                          <li class="nav-item fs-2">
+                            <a class="nav-link" href="AC_services.html" ><i class='bx bxl-soundcloud text-primary me-2'></i> AC</a>
+                          </li>
+                          <li class="nav-item fs-2">
+                            <a class="nav-link" href="GyserServices.html"> <i class='bx bxs-hot text-primary me-2'></i>Gyser</a>
+                          </li>
+                          <li class="nav-item fs-2">
+                            <a class="nav-link" href="RefrigeratorServices.html"><i class='bx bx-cloud-snow text-primary me-2'></i>Refrigerator</a>
+                          </li>
+                          <li class="nav-item fs-2">
+                              <a href="AutomaticMachine_Services.html" class="nav-link"><i class='bx bxs-package text-primary me-2'></i>Automatic Machine</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item  d-flex align-items-center flex-column">
-                <i class="bx bx-cloud-snow text-primary fw-bold"></i>
-                <a class="nav-link customNav-link active text-white" aria-current="page" href="RefrigeratorServices.html">Refrigerator</a>
-              </li>
-              <li class="nav-item  d-flex align-items-center flex-column">
-                <i class="bx bx-water text-primary fw-bold"></i>
-                <a class="nav-link customNav-link active text-white" aria-current="page" href="AutomaticMachine_Services.html">Machine</a>
+              <li class="d-flex align-items-center flex-column">
+                <a href="https://wa.me/+923124387803"><i class="bx bxs-phone text-white fs-3"></i></a>
+                <p>Contact</p>
               </li>
          </ul>
     </nav>
