@@ -5,8 +5,12 @@
     transition: all 0.2s ease;
     
   }
+  .navbar{
+    position: sticky;
+    top: 0;
+  }
   .NavbarMobile{
-       background-color: rgb(230, 74, 17);
+       background-color:  rgb(10, 75, 179);
        position:fixed;
        bottom:0; 
        width:100%;
