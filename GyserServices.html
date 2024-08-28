@@ -49,19 +49,18 @@
       <div id="fixedButtons"></div>
       <script>loadContent('FixedButtons.html', 'fixedButtons');</script>
       <div class="container px-3 py-5 bg-light">
-        <h1>Services</h1>
         <div class="container servicesCardsContainer">
             <div class="card servicesCard shadow-sm" style="border-radius: 10px;">
                 <div class="card-body d-flex align-items-start">
                     <div class="imgWrapper">
-                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="Gyser Service" style="width: 120px; height: 130px;">
+                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="AC Service" style="width: 120px; height: 130px;">
                     </div>
                     <div class="servicesCardContent ms-3">
-                        <p class="m-0 fw-bold">Gyser General Service</p>
-                        <p class="m-0 text-muted">- Per Gyser (1 to 2.5 tons)</p>
+                        <p class="m-0 fw-bold">Gyser Service</p>
+                        <p class="m-0 text-muted">- Per AC (1 to 2.5 tons)</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <p class="text-decoration-line-through text-muted">Rs. 3500</p>
-                            <p class="fw-bold price" data-initial-price="2150">Rs. 2150</p>
+                            <p class="fw-bold price" data-initial-price="850">Rs. 850</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mt-2">
                             <div class="d-flex align-items-center text-warning bg-light rounded-pill px-2">
@@ -70,6 +69,7 @@
                             </div>
                             <div class="d-flex align-items-center" style="position: absolute; right: 10px;">
                                 <button class="btn border btn-sm d-flex align-items-center rounded-pill addButton">
+                                    <span class="fw-bold text-light bg-black rounded-circle px-2">-</span>
                                     <span class="fw-bold me-2">Add</span>
                                     <span class="fw-bold text-light bg-black rounded-circle px-2">+</span>
                                 </button>
@@ -77,8 +77,9 @@
                         </div>
                         <!-- Continue box -->
                         <div class="continueBox mt-2 d-none">
+                            <button onclick="disappearBox(event)"type="button" class="btn-close" data-bs-dismiss="continueBox" aria-label="Close"></button>
                             <div class="d-flex align-items-center justify-content-between box-content">
-                              <span class="totalPrice">Rs 2150</span>
+                              <span class="totalPrice">Rs 850</span>
                               <button class="btn continueButton text-light">Continue </button><span>&#8594;</span>
                             </div>
                         </div>
@@ -88,14 +89,14 @@
             <div class="card servicesCard shadow-sm" style="border-radius: 10px;">
                 <div class="card-body d-flex align-items-start">
                     <div class="imgWrapper">
-                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="Gyser Service" style="width: 120px; height: 130px;">
+                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="AC Service" style="width: 120px; height: 130px;">
                     </div>
                     <div class="servicesCardContent ms-3">
-                        <p class="m-0 fw-bold">Gyser Maintain Service</p>
-                        <p class="m-0 text-muted">- Per Gyser (1 to 2.5 tons)</p>
+                        <p class="m-0 fw-bold">AC Install Service</p>
+                        <p class="m-0 text-muted">- Per AC (1 to 2.5 tons)</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <p class="text-decoration-line-through text-muted">Rs. 3500</p>
-                            <p class="fw-bold price" data-initial-price="2800">Rs. 2800</p>
+                            <p class="fw-bold price" data-initial-price="900">Rs. 900</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mt-2">
                             <div class="d-flex align-items-center text-warning bg-light rounded-pill px-2">
@@ -104,6 +105,7 @@
                             </div>
                             <div class="d-flex align-items-center" style="position: absolute; right: 10px;">
                                 <button class="btn border btn-sm d-flex align-items-center rounded-pill addButton">
+                                    <span class="fw-bold text-light bg-black rounded-circle px-2">-</span>
                                     <span class="fw-bold me-2">Add</span>
                                     <span class="fw-bold text-light bg-black rounded-circle px-2">+</span>
                                 </button>
@@ -111,8 +113,9 @@
                         </div>
                         <!-- Continue box -->
                         <div class="continueBox mt-2 d-none">
+                            <button onclick="disappearBox(event)"type="button" class="btn-close" data-bs-dismiss="continueBox" aria-label="Close"></button>
                             <div class="d-flex align-items-center justify-content-between box-content">
-                                <p><span class="totalPrice">Rs. 2800</span></p>
+                                <p><span class="totalPrice">Rs. 900</span></p>
                                 <button class="btn continueButton text-light">Continue </button><span>&#8594;</span>
                             </div>
                         </div>
@@ -122,11 +125,11 @@
             <div class="card servicesCard shadow-sm" style="border-radius: 10px;">
                 <div class="card-body d-flex align-items-start">
                     <div class="imgWrapper">
-                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="Gyser Service" style="width: 120px; height: 130px;">
+                        <img src="Assets/ac1.webp" class="img-fluid rounded" alt="AC Service" style="width: 120px; height: 130px;">
                     </div>
                     <div class="servicesCardContent ms-3">
-                        <p class="m-0 fw-bold">Gyser Repair Service</p>
-                        <p class="m-0 text-muted">- Per Gyser (1 to 2.5 tons)</p>
+                        <p class="m-0 fw-bold">AC Repair Service</p>
+                        <p class="m-0 text-muted">- Per AC (1 to 2.5 tons)</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <p class="text-decoration-line-through text-muted">Rs. 3500</p>
                             <p class="fw-bold price" data-initial-price="800">Rs. 800</p>
@@ -138,6 +141,7 @@
                             </div>
                             <div class="d-flex align-items-center" style="position: absolute; right: 10px;">
                                 <button class="btn border btn-sm d-flex align-items-center rounded-pill addButton">
+                                    <span class="fw-bold text-light bg-black rounded-circle px-2">-</span>
                                     <span class="fw-bold me-2">Add</span>
                                     <span class="fw-bold text-light bg-black rounded-circle px-2">+</span>
                                 </button>
@@ -145,6 +149,7 @@
                         </div>
                         <!-- Continue box -->
                         <div class="continueBox mt-2 d-none">
+                            <button onclick="disappearBox(event)"type="button" class="btn-close" data-bs-dismiss="continueBox" aria-label="Close"></button>
                             <div class="d-flex align-items-center justify-content-between box-content">
                                 <p><span class="totalPrice">Rs. 800</span></p>
                                 <button class="btn continueButton text-light">Continue </button><span>&#8594;</span>
@@ -154,7 +159,6 @@
                 </div>
             </div>
         </div>
-        
       </div>
         <div class="container">
            <h2>Best Gyster Services in Pakistan</h2>
