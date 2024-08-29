@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = `I would like to order ${currentQuantity} ${productName}(s) for a total of Rs. ${newPrice}.`;
 
             // WhatsApp API link
-            const whatsappLink = `https://wa.me/+923104453625?text=${encodeURIComponent(message)}`;
+            const whatsappLink = `https://wa.me/+923000000000?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
         }
     });
@@ -71,7 +71,7 @@ function submitService(serviceType) {         /* The function submitService(serv
       const subServiceText = subService.value;
 
       // Create the WhatsApp message
-      const whatsappLink = `https://wa.me/+923104453625?text=I would like to book a ${serviceType} service for ${encodeURIComponent(subServiceText)}.`;   /* The encodeURIComponent() function is used to ensure that the sub-service text is safely included in the URL (special characters are properly encoded). */
+      const whatsappLink = `https://wa.me/+923000000000?text=I would like to book a ${serviceType} service for ${encodeURIComponent(subServiceText)}.`;   /* The encodeURIComponent() function is used to ensure that the sub-service text is safely included in the URL (special characters are properly encoded). */
       
       // Open WhatsApp link in a new tab
       window.open(whatsappLink, '_blank');
